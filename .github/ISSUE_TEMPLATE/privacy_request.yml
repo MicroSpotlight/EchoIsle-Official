@@ -1,0 +1,29 @@
+name: Privacy request
+description: Ask a privacy question or report a privacy concern.
+title: "[Privacy]: "
+labels:
+  - question
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not include sensitive personal information in public issues. Start with the Privacy Policy: https://echoisle.microspotlight.team/privacy
+  - type: textarea
+    id: request
+    attributes:
+      label: Privacy question or concern
+      placeholder: Describe your question without sharing private data.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Include app version and iOS version if relevant.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I have not included private or sensitive information in this public issue.
+          required: true

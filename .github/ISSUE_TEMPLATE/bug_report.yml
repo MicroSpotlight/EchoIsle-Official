@@ -1,0 +1,78 @@
+name: Bug report
+description: Report something that is not working in Echo Isle.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Echo Isle. Please do not include private RSS feeds, passwords, tokens, payment information, or other sensitive data.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened?
+      placeholder: Describe the issue in a few sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce it?
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: What actually happened?
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: Echo Isle version
+      placeholder: "0.0.1"
+  - type: input
+    id: ios-version
+    attributes:
+      label: iOS version
+      placeholder: "iOS 17.5"
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      placeholder: "iPhone 15 Pro"
+  - type: textarea
+    id: feed
+    attributes:
+      label: Public RSS feed or episode URL
+      description: Include only public URLs. Do not paste private or authenticated feeds.
+      placeholder: "https://example.com/feed.xml"
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or recordings
+      description: Drag files here if they help explain the issue.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I have removed private or sensitive information from this report.
+          required: true
+        - label: I have checked existing issues for duplicates.
+          required: true

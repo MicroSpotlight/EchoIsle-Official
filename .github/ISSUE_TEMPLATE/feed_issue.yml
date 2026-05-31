@@ -1,0 +1,50 @@
+name: RSS feed issue
+description: Report a podcast feed, episode, artwork, or metadata issue.
+title: "[Feed]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Feed issues are often specific to one publisher's RSS or media hosting. Please include only public URLs.
+  - type: input
+    id: show-title
+    attributes:
+      label: Show title
+      placeholder: "Example Podcast"
+    validations:
+      required: true
+  - type: input
+    id: feed-url
+    attributes:
+      label: Public RSS feed URL
+      placeholder: "https://example.com/rss"
+    validations:
+      required: true
+  - type: input
+    id: episode-url
+    attributes:
+      label: Episode or media URL
+      placeholder: "Optional"
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is wrong?
+      description: Search failure, import failure, artwork, dates, duration, playback, downloads, or another issue?
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Extra details
+      placeholder: Include app version, iOS version, and screenshots if useful.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: The feed URL is public and does not require authentication.
+          required: true
+        - label: I have removed private or sensitive information.
+          required: true

@@ -1,0 +1,16 @@
+title: Echo Isle
+description: A focused RSS podcast player for iOS.
+url: https://echoisle.microspotlight.team
+baseurl: ""
+lang: en-US
+timezone: Asia/Shanghai
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-seo-tag
+header_pages:
+  - privacy.md
+  - terms.md
+  - support.md
+  - content-rights.md
+  - changelog.md

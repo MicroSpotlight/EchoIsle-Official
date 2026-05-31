@@ -1,0 +1,17 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share an idea, workflow, or direction for Echo Isle.
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: What would you like to discuss?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What listening workflow or problem inspired this?
